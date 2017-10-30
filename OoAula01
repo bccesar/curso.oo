@@ -1,0 +1,50 @@
+Nome da Classe tem o mesmo nome do arquivo Java
+Nome de classe começa em maiuscula (String é clasee, int não)
+Case sensitive
+Arquivo com extensão .java
+Identação de 4 espaços
+Abertura de bloco na mesma linha da instrução
+Camel Case para classes
+O compilador é o javac
+  javac OlaMundo.Java
+  vai gerar o OlaMundo.class
+
+
+loop
+    continue
+        ele irá ignorar oque estiver abaixo
+    break
+        irá sair do loop
+
+i++
+    soma e atribuii de volta
+i+=n
+    soma e atribui de volta
+++i
+    soma primeiro e depois atribui
+    ex1:
+    int a = 4;
+    int b = 4++;
+    r: a=5, b=4
+
+    ex2:
+    int a = 4;
+    int b = ++4;
+    r: a=5, b=5
+
+Tipos Primitivos
+    Alocam espaço na memória
+Não são classes
+    boolean     1 bit
+    byte        8 bits
+    char        16 bits(2 bytes)
+    short       16 bits(2 bytes) pode armazenar negativos
+    int         32 bits(4 bytes)
+    long        64 bits(8 bytes)
+    float       32 bits(4 bytes)
+    double      64 bits(8 bytes)
+
+
+Um tipo maior pode receber um tipo menor
+
+https://github.com/caelumaulas/oo7162/
