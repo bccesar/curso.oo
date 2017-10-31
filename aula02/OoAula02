@@ -1,0 +1,18 @@
+Quando crio dois objetos, depois atribuo um no outro, eles usam a mesma referencia na memória,
+isso faz com que acabe altrando as duas refrencias ao mesmo tempo
+ex:
+
+Conta c1 = new Conta();
+Conta c2 = new Conta();
+c1.nome = "Bruno"
+//ate aqui cada uma aponta para uma referncia da memoria
+c2 = c1;
+//agora ambos apontam para o mesmo ponto da memoria
+c2.nome = "Joao"
+//como apontam para o mesmo ponto da memória, agora c1.nome tb é Joao
+
+usando static
+Isso permite que a classe ou atributo mantenha o valor e todos os outros que o consumirem irão ver o
+mesmo valor
+ex: static int identificador;
+todos que instanciarem a classe desse atributo irão ver o mesmo valor do identificador
