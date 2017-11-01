@@ -16,3 +16,21 @@ Isso permite que a classe ou atributo mantenha o valor e todos os outros que o c
 mesmo valor
 ex: static int identificador;
 todos que instanciarem a classe desse atributo irão ver o mesmo valor do identificador
+
+
+Ctrl + n			novo
+Ctrl + espaco		completar
+Ctrl + 1			quickfix
+Ctrl + 3 			pesquisa ex: ggas, gcuf
+Ctrl + d			apaga a linha onde esta o cursor
+Ctrl + pgup/pgdn	navega entre os arquivos abertos
+Alt + Shift + r		renomear atributo/metodo
+Ctrl + s			salvar
+Ctrl + Shift + s	salvar tudo
+Ctrl + F11			Executa o main da classe aberta / se nao tiver main, excuta a ultima execucao
+Alt + Shift + x + j	Abre tela de execucoes, o j clica depois na verdade
+Ctrl + o			Lista metodos e atributos da classe
+Ctrl + m			maximiza/reduz a view atual
+Ctrl + shift + l	mostra todos os atalhos
+
+
