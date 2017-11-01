@@ -1,0 +1,59 @@
+Ctrl + N 			ex: package - cria as pastas direto, basta colocar . e ele cria as subpastas
+Alt + Shift + V		move a classe para o package desejado
+Ctrl + d			apaga a linha selecionada
+Ctrl + Shift + o	cria sozinho o import que falta na classe
+Ctrl + 3			ex: Navigator - vai mostrar a estrutura de pastas criadas
+Alt + Shift + r		ex: rename package tb!!
+Ctrl + 3			ex: generate javadoc - cria documentacao do sistemas com base dos comanterios
+Ctrl + Shift + f	formata a identacao
+
+Para exportar o projeto para execucao
+Botao direito, export, JAR FILE
+o arquivo .jar é como um zip de todo o projeto
+
+
+Para executar
+no terminal - vai na pasta onde esta o jar
+java -jar Banco.jar
+
+Para comentar no seu codigo, va acima da Classe/Metodo e digite
+/** + enter
+ele irá montar a estrutura de comentário para voce
+
+Ctrl + 3			ex: generate javadoc - cria documentacao do sistemas com base dos comanterios
+
+
+swing e javax
+interfaces java para desktop
+no vale a pena se aprofundar considerando o mercado
+
+https://github.com/caelum/javafx-lib-contas
+
+Heranca
+classe pai/super classe
+classe filha/subclasse
+
+protected
+só é visivel para as classes filhas que herdam a classe pai
+
+super
+quando fazemos um override, e desejamos nesse metodo acessar o metodo pai original, 
+temos que colocar super.NomedometodoPai
+
+@Override
+Colocamos acima do metodo sub, apenas para garantir na compliacao, que o metodo sub esteja com a mesma
+assinatura do metodo sup
+mas nao é obrigatório, nao precisa colocar nada na assinatura do metodo
+
+Polimorfismo
+Funcionario func = new Gerente()
+Isso pode porque Funcionario é pai de gerente
+func.getSenha nao funciona porque getSenha é exclusivo de Gerente
+func.getBonificacao funciona porque tem em ambos, func e ger, e pega o do Ger 
+pq ele é quem foi colocado na memória
+
+
+
+
+
+
