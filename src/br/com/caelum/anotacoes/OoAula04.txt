@@ -1,0 +1,20 @@
+http://blog.caelum.com.br/nao-aprender-oo-getters-e-setters/
+http://blog.caelum.com.br/como-nao-aprender-orientacao-a-objetos-heranca/
+
+
+Para forcar a usar o try catch
+na assinatura no metodo, no final dela, colocar throws NomeclasseException
++
+na NomeClasseException, ele deve obrigatoriamente herdar de Execption
+
+Finally
+pode ser usado para finalizar conexoes e arquivos por exemplo dentro do try
+
+Execption
+Essa classe obriga a tratar ela, 
+metodos que lancam ela, vao precisar ter na assinatura o thows Exeption
+quem usar esses metodos vao ter q usar try
+
+
+
+

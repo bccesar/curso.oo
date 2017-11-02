@@ -9,10 +9,6 @@ public class TestaFuncionario {
 
 	public static void main(String[] args) {
 
-		Funcionario f = new Funcionario();
-		f.setNome("Joao");
-		f.setSalario(1000);
-		
 		Gerente g = new Gerente();
 		g.setNome("Zeca");
 		g.setSalario(1000);
@@ -26,7 +22,6 @@ public class TestaFuncionario {
 		
 		
 		ControleDeBonificacao cb = new ControleDeBonificacao();
-		cb.adiciona(f);
 		cb.adiciona(g);
 		cb.adiciona(s);
 		System.out.println(cb.getTotal());

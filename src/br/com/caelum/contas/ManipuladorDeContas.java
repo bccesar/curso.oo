@@ -28,7 +28,11 @@ public class ManipuladorDeContas {
 	public void saca(Evento evento){
 		
 		double valor = evento.getDouble("valorOperacao");
-		conta.saca(valor);
+		try {
+			conta.saca(valor);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		
 		
 	}
