@@ -1,8 +1,8 @@
-package br.com.caelum.funcionario.modelo;
+package br.com.caelum.cliente.modelo;
 
 import br.com.caelum.autenticacao.Autenticavel;
 
-public class Gerente extends Funcionario implements Autenticavel{
+public class Cliente implements Autenticavel {
 
 	public String senha;
 
@@ -14,6 +14,7 @@ public class Gerente extends Funcionario implements Autenticavel{
 		this.senha = senha;
 	}
 	
+	@Override
 	public boolean autentica(String senha){
 		if(this.senha == senha){
 			return true;
@@ -21,9 +22,5 @@ public class Gerente extends Funcionario implements Autenticavel{
 			return false;
 		}
 	}
-	
-	@Override
-	public double getBonificacao(){
-		return getSalario() * 0.10 + 3000;
-	}
+
 }

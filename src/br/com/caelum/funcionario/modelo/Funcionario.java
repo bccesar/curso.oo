@@ -1,6 +1,6 @@
 package br.com.caelum.funcionario.modelo;
 
-public class Funcionario {
+public abstract class Funcionario {
 	
 	private String nome;
 	private double salario;
@@ -19,11 +19,6 @@ public class Funcionario {
 		this.salario = salario;
 	}
 	
-	public double getBonificacao(){
-		return this.salario * 0.10;
-		
-	}
-	
-	
+	public abstract double getBonificacao();
 	
 }
