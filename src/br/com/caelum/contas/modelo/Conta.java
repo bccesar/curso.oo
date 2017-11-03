@@ -8,7 +8,7 @@ import br.com.caelum.exception.SaldoInsuficienteException;
  * @author oo7162
  *
  */
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
 
 	private String titular;
 	private int numero;
@@ -111,5 +111,59 @@ public abstract class Conta {
 
         return r;
     }
+
+	@Override
+	public String toString() {
+		return "Conta [titular=" + titular.toUpperCase() + ", numero=" + numero + ", agencia=" + agencia + ", saldo=" + saldo + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((agencia == null) ? 0 : agencia.hashCode());
+		result = prime * result + numero;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Conta other = (Conta) obj;
+		if (agencia == null) {
+			if (other.agencia != null)
+				return false;
+		} else if (!agencia.equals(other.agencia))
+			return false;
+		if (numero != other.numero)
+			return false;
+		return true;
+	}
+
+	
+	@Override
+	public int compareTo(Conta c) {
+		//baseado no seu criterio de comparacao
+		//pode ser qualquer atriuto que vc escolher, saldo, nome, data
+		//se maior deve trazer positivo
+		//se menor deve trazer negativo
+		//se igual deve trazer 0
+		//ex: usando o saldo
+		//isso vai ser usado pelo Colletion.sort para ordenar
+
+		if(this.saldo < c.saldo){
+			return -1;
+		}
+		if(this.saldo > c.saldo){
+			return 1;
+		}
+		return 0;
+	}
+    
 
 }
