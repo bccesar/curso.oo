@@ -1,0 +1,52 @@
+Ctrl + 3			ex: toString - vai gerar um to @Override string da classe com os atributos que vc selecionar
+Ctrl + Shift + t	OpenType, posso pesquisar e abrir classes
+Ctrl + o			lista os atributos e metodos da classe, po filtar e achar o metodo rapidameente
+
+
+lucas.sampaio@caelum.com.br
+
+Array
+Ele cria um array de referencias da memoria
+o seu array ocupa um espaco na memória, e em suas posicoes ficam apenas 
+as referncias para outros pontos da memoria
+a nao ser que seja um tipo primitivo(ex: int) daí ele armazena a irmacao direto nela
+
+Array precisa ser dito o tamanho logo no inicio
+Array nao pode ser redimensionado
+Para aumentar precisa criar um novo array e passar item a item para o novo array
+é uma BOA PRATICA ao criar o novo array, criar com o dobro do tamanho do array anterior
+assim nao temos q fazer essa copia com frequecia, pois ele cria conforme o volume
+No Array vc precisa tratar quando algum ponto no meio do array nao é mais utilizado
+e vc deseja reaproveitar aquela posicao
+
+mutavel x imutavel ?
+String é imutvel pq nenhum dos seus metodos muda seu proprio valor
+
+
+Colletion.sort
+para poder utilizar  sorte, a classe precisa herdar de Comparable
+e precisa implementar o compareTo, inclusive nesse compareTo é q vc definirá
+o criterio de ordenacao do sua classe
+
+hashSet
+ele só da add se o objeto for diferente, para isso, ele se baseia no equals
+é nele q esta o criterio para o HashSet saber se existe ou nao
+nele usamos o HAshCode, que é INT e é uma categoriazacao, que é usado para 
+agrupar os itens da lista em menos itens
+quando usamos o metodo contais() do HashSet, ele irá buscar primeiro no
+hashCode e depois no conteudo dentro desse hashCode
+se nao achar no hashCode, ja diz q nao tem
+se achar no hashCode, só busca o esultado dentro dele
+ganha muito em performance
+
+
+
+
+
+
+
+
+
+Variavel
+ela só ponta para uma referencia na memoria
+ 
